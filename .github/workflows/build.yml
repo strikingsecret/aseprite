@@ -22,7 +22,7 @@ jobs:
       if: runner.os == 'Linux'
       with:
         key: ${{ matrix.os }}-${{ matrix.enable_ui }}
-    - uses: seanmiddleditch/gha-setup-ninja@v1.11.1
+    - uses: seanmiddleditch/gha-setup-ninja@v4
     - uses: ilammy/msvc-dev-cmd@v1
       if: runner.os == 'Windows'
     - name: Install Dependencies
